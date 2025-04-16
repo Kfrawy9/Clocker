@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/taskFragment">
+
+    <fragment
+        android:id="@+id/taskFragment"
+        android:name="com.example.Elkfrawy.ui.preTask.TaskFragment"
+        android:label="fragment_task"
+        tools:layout="@layout/fragment_task" >
+        <action
+            android:id="@+id/action_taskFragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventFragment"
+        android:name="com.example.Elkfrawy.ui.eventUi.EventFragment"
+        android:label="fragment_event"
+        tools:layout="@layout/fragment_event" />
+
+    <fragment
+        android:id="@+id/stopwatchFragment"
+        android:name="com.example.Elkfrawy.ui.stopwatch.StopwatchFragment"
+        android:label="fragment_stopwatch"
+        tools:layout="@layout/fragment_stopwatch" />
+    <fragment
+        android:id="@+id/timerFragment"
+        android:name="com.example.Elkfrawy.ui.TimerFragment"
+        android:label="fragment_timer"
+        tools:layout="@layout/fragment_timer" />
+    <dialog
+        android:id="@+id/addTaskFragment"
+        android:name="com.example.Elkfrawy.ui.preTask.AddTaskFragment"
+        android:label="fragment_add_task"
+        tools:layout="@layout/fragment_add_task"
+        >
+        <argument android:name="state"
+            app:argType="integer"/>
+    </dialog>
+
+</navigation>

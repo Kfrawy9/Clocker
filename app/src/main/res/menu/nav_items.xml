@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/taskFragment"
+        android:title="@string/tasks"
+        android:icon="@drawable/ic_home"
+        android:enabled="true"
+        />
+
+    <item
+        android:id="@+id/eventFragment"
+        android:title="@string/events"
+        android:icon="@drawable/ic_event"
+        android:enabled="true"
+        />
+
+
+    <item
+        android:id="@+id/stopwatchFragment"
+        android:title="@string/stopwatch"
+        android:icon="@drawable/ic_stopwatch"
+        android:enabled="true"
+        />
+
+    <item
+        android:id="@+id/timerFragment"
+        android:title="@string/timer"
+        android:icon="@drawable/ic_timer"
+        android:enabled="true"
+        />
+</menu>

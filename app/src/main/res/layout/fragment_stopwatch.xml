@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.stopwatch.StopwatchFragment"
+    android:background="@color/background"
+    >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ms"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:textColor="@color/text"
+        app:layout_constraintLeft_toRightOf="@id/lapList"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/time"
+        android:layout_marginLeft="-13dp"
+        android:layout_marginTop="23dp"
+        android:id="@+id/milliSecond"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/time"
+        android:text="@string/sw"
+        android:textSize="45sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/text"
+        android:layout_margin="16dp"
+        android:paddingRight="12dp"
+        />
+
+    <ListView
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time"
+        app:layout_constraintBottom_toTopOf="@id/playPause"
+        android:layout_margin="19dp"
+        android:id="@+id/lapList"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/playPause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lapList"
+        android:src="@drawable/ic_play"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/tabs"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/playPause"
+        app:layout_constraintTop_toTopOf="@id/playPause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="4dp"
+        android:id="@+id/reset"
+        android:src="@drawable/ic_reset"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/tabs"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@id/playPause"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/playPause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:id="@+id/lap"
+        android:src="@drawable/ic_lab"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/tabs"
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

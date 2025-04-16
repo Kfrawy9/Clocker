@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    >
+
+    <Button
+       style="@style/alarmDaysButtons"
+        android:text="S"
+        android:id="@+id/sun"
+        />
+
+    <Button
+        style="@style/alarmDaysButtons"
+        android:text="M"
+        android:id="@+id/mon"
+        />
+
+    <Button
+        style="@style/alarmDaysButtons"
+        android:text="T"
+        android:id="@+id/tue"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/alarmDaysButtons"
+        android:text="W"
+        android:id="@+id/wed"
+        />
+
+    <Button
+        style="@style/alarmDaysButtons"
+        android:text="T"
+        android:id="@+id/thu"
+        android:onClick="days"
+        />
+
+    <Button
+        style="@style/alarmDaysButtons"
+        android:text="F"
+        android:id="@+id/fri"
+        />
+
+    <Button
+        style="@style/alarmDaysButtons"
+        android:text="S"
+        android:id="@+id/sat"
+        />
+
+</LinearLayout>

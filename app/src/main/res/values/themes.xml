@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Clocker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#78909c</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#78909c</item>
+        <item name="colorSecondaryVariant">#78909c</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <color name="gray">#bdbdbd</color>
+    <color name="background">#cfd8dc</color>
+    <color name="text">#616161</color>
+    <color name="items">#90a4ae</color>
+    <color name="tabs">#78909c</color>
+    <color name="selectedButton">#b0bec5</color>
+    <color name="selectedText">#424242</color>
+
+    <drawable name="add">@drawable/ic_add</drawable>
+
+    <style name="gridAttrib">
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:buttonStyle">@style/Widget.AppCompat.Button.Borderless</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">35sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="alarmDaysButtons">
+        <item name="android:layout_width">45dp</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:background">@color/color</item>
+        <item name="android:textColor">@color/days_text_color</item>
+        <item name="backgroundTint">@null</item>
+        <item name="android:layout_marginRight">8dp</item>
+
+    </style>
+</resources>

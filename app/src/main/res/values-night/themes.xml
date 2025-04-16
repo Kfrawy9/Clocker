@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Clocker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/teal_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <drawable name="add">@drawable/ic_add_white</drawable>
+
+    <color name="gray">#424242</color>
+    <color name="background">#37474f</color>
+    <color name="text">#e0e0e0</color>
+    <color name="items">#455a64</color>
+    <color name="tabs">@color/teal_200</color>
+    <color name="selectedButton">#263238</color>
+    <color name="selectedText">#eeeeee</color>
+
+</resources>
